@@ -6,10 +6,15 @@
       <slack-section>
         <div id="info-group">
           <h4 id="poll-title">{{ title }}</h4>
-          <div>By: You</div>
+          <div id="poll-username">By: You</div>
           <div>
-            Mode:
-            <a id="poll-type" @click="togglePollType">{{ multiple ? 'Multiple' : 'Single' }}</a>
+            <span id="poll-mode">Mode:</span>
+            <a
+              id="poll-type"
+              @click="togglePollType"
+            >
+              {{ multiple ? 'Multiple' : 'Single' }}
+            </a>
           </div>
         </div>
       </slack-section>

@@ -30,7 +30,7 @@ export default {
     }
   },
   mounted() {
-    document.getElementById('title-input').focus()
+    document.getElementById('title-input')?.focus()
   }
 }
 </script>
