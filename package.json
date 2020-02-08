@@ -5,21 +5,26 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "start": "node server.js",
     "lint": "vue-cli-service lint",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "start": "node server.js",
+    "test:unit": "vue-cli-service test:unit --watch --verbose",
+    "test:coverage": "vue-cli-service test:unit --coverage"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.1.0",
     "core-js": "^3.4.3",
     "express": "^4.17.1",
+    "sinon": "^8.1.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",
     "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-plugin-unit-jest": "^4.1.2",
     "@vue/cli-service": "^4.1.0",
+    "@vue/test-utils": "1.0.0-beta.29",
     "babel-eslint": "^10.0.3",
     "cypress": "^3.8.1",
     "eslint": "^5.16.0",
@@ -37,12 +42,29 @@
       "eslint:recommended"
     ],
     "rules": {
-      "quotes": ["error", "single"],
-      "semi": ["error", "never"]
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "never"
+      ]
     },
     "parserOptions": {
       "parser": "babel-eslint"
-    }
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
   },
   "browserslist": [
     "> 1%",

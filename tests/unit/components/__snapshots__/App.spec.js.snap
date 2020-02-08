@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test App.js should be render 1`] = `
+<div
+  id="app"
+>
+  <div
+    id="stub-poll"
+  />
+</div>
+`;

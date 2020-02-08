@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Poll.vue should be render 1`] = `
+<div
+  class="Poll"
+>
+  <div
+    class="container"
+  >
+    <div
+      id="poll-title"
+    >
+      <div
+        class="row justify-content-center"
+      >
+        <div
+          class="col-md-6 col-12"
+        >
+          <input
+            autocomplete="off"
+            id="title-input"
+            placeholder="Here goes your poll title"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+     
+    <div
+      class="row justify-content-center"
+      id="poll-option-input"
+    >
+      <div
+        class="col-md-6 col-12"
+      >
+        <input
+          id="add-option-input"
+          placeholder="Add an amazing option"
+          type="text"
+        />
+      </div>
+    </div>
+     
+    <div
+      class="row justify-content-center"
+      id="slack-message-container"
+    >
+      <div
+        class="col-6"
+      >
+        <div
+          id="poll-info"
+        >
+          <div
+            id="bot-avatar"
+          />
+           
+          <div
+            id="bot-message"
+          >
+            <h4
+              id="bot-name"
+            >
+              Yellow Poll
+            </h4>
+             
+            <div
+              class="slack-section"
+            >
+              <div
+                class="separator"
+              />
+               
+              <div
+                class="slack-slot"
+              >
+                <div
+                  id="info-group"
+                >
+                  <h4
+                    id="poll-title"
+                  >
+                    
+                  </h4>
+                   
+                  <div
+                    id="poll-username"
+                  >
+                    By: You
+                  </div>
+                   
+                  <div>
+                    <span
+                      id="poll-mode"
+                    >
+                      Mode:
+                    </span>
+                     
+                    <a
+                      id="poll-type"
+                    >
+                      
+            Single
+          
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+             
+            <div
+              id="options-slot"
+            >
+              <div
+                class="slack-section"
+              >
+                <div
+                  class="separator"
+                />
+                 
+                <div
+                  class="slack-slot"
+                >
+                  <ul
+                    id="options-list"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <div
+      id="poll-command-text-area"
+    >
+      <div
+        class="row justify-content-center"
+      >
+        <div
+          class="col-md-6 col-12"
+        >
+          <span
+            id="instructions"
+          >
+            Copy-pasta your command into slack :^)
+          </span>
+           
+          <textarea
+            id="command-input"
+          />
+        </div>
+      </div>
+    </div>
+     
+    <div
+      class="row justify-content-center"
+    >
+      <div
+        class="col-3"
+      >
+        <a
+          class=""
+        >
+          Copy
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

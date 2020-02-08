@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SlackListItem.vue should be render 1`] = `
+<li>
+  <input
+    class="option-input-element"
+    type="text"
+  />
+   
+  <a
+    class="option-remove-element"
+  >
+    ❌
+  </a>
+</li>
+`;

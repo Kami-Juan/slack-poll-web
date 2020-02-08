@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SlackSection.vue should be render 1`] = `
+<div
+  class="slack-section"
+>
+  <div
+    class="separator"
+  />
+   
+  <div
+    class="slack-slot"
+  >
+    <anonymous-stub />
+  </div>
+</div>
+`;

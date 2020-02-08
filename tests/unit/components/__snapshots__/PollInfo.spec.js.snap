@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test PollInfo.vue should be render 1`] = `
+<div
+  id="poll-info"
+>
+  <div
+    id="bot-avatar"
+  />
+   
+  <div
+    id="bot-message"
+  >
+    <h4
+      id="bot-name"
+    >
+      Yellow Poll
+    </h4>
+     
+    <div
+      class="slack-section"
+    >
+      <div
+        class="separator"
+      />
+       
+      <div
+        class="slack-slot"
+      >
+        <div
+          id="info-group"
+        >
+          <h4
+            id="poll-title"
+          >
+            I"m title
+          </h4>
+           
+          <div
+            id="poll-username"
+          >
+            By: You
+          </div>
+           
+          <div>
+            <span
+              id="poll-mode"
+            >
+              Mode:
+            </span>
+             
+            <a
+              id="poll-type"
+            >
+              
+            Single
+          
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <div
+      id="options-slot"
+    >
+      <div
+        class="slack-section"
+      >
+        <div
+          class="separator"
+        />
+         
+        <div
+          class="slack-slot"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

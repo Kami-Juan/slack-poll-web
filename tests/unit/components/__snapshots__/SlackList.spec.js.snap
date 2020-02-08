@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SlackList.vue should be render 1`] = `
+<ul
+  id="options-list"
+>
+  <anonymous-stub
+    value="One element"
+  />
+</ul>
+`;

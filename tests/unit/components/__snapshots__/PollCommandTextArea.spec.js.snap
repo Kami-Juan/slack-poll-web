@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test PollCommandTextArea.vue should be render 1`] = `
+<div
+  id="poll-command-text-area"
+>
+  <div
+    class="row justify-content-center"
+  >
+    <div
+      class="col-md-6 col-12"
+    >
+      <span
+        id="instructions"
+      >
+        Copy-pasta your command into slack :^)
+      </span>
+       
+      <textarea
+        id="command-input"
+      />
+    </div>
+  </div>
+</div>
+`;

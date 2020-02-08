@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test PollOptionInput.vue should be render 1`] = `
+<div
+  class="row justify-content-center"
+  id="poll-option-input"
+>
+  <div
+    class="col-md-6 col-12"
+  >
+    <input
+      id="add-option-input"
+    />
+  </div>
+</div>
+`;
