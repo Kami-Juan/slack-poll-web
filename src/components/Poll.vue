@@ -17,7 +17,7 @@
                   v-for="(option, key) in options"
                   :key="key"
                   :value="option.value"
-                  @input="updateOptionPersisted($event, key)"
+                  @input="editOption($event, key)"
                   @remove="removeOption(key)"
                 ></slack-list-item>
               </slack-list>
@@ -92,18 +92,12 @@ export default {
       })
 
       this.newOptionText = ''
-      this.updatedOptionsOffline(this.options)
     },
     removeOption(key) {
       this.options.splice(key, 1)
-      this.updatedOptionsOffline(this.options)
     },
-    updateOptionPersisted(value, id) {
-      this.options = this.options.map((option, index) =>
-        index === id ? { ...option, value } : option
-      )
-
-      this.updatedOptionsOffline(this.options)
+    editOption(newOption, key) {
+      this.options = this.options.map((option, i) => i === key ? {value: newOption} : option )
     },
     focusOnNextInput() {
       document.getElementById('add-option-input').focus()
@@ -126,9 +120,6 @@ export default {
         multiple: this.multiple
       })
     },
-    updatedOptionsOffline(options) {
-      localStorage.setItem('options', JSON.stringify(options))
-    }
   },
   watch: {
     command() {
@@ -140,6 +131,9 @@ export default {
     multiple(newValue) {
       this.updateCommand()
       localStorage.setItem('multiple', newValue)
+    },
+    options(newValue) {
+      localStorage.setItem('options', JSON.stringify(newValue))
     }
   }
 }

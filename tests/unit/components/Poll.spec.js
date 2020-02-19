@@ -83,7 +83,7 @@ describe('test Poll.vue', () => {
   it('update a option and change the value in the localstorage', () => {
     const cmp = shallowMount(Poll, {localVue})
     cmp.setData({ options: [{ value: 'Tamales' }] })
-    cmp.vm.updateOptionPersisted('Hojaldras', 0)
+    cmp.vm.editOption('Hojaldras', 0)
 
     const optionsOffline = JSON.parse(localStorage.getItem('options'))
 
@@ -95,7 +95,7 @@ describe('test Poll.vue', () => {
   it('update a option who doesn"t exists in the list', () => {
     const cmp = shallowMount(Poll, {localVue})
     cmp.setData({ options: [{ value: 'Tamales' }] })
-    cmp.vm.updateOptionPersisted('Hojaldras', 1)
+    cmp.vm.editOption('Hojaldras', 1)
 
     const optionsOffline = JSON.parse(localStorage.getItem('options'))
 
